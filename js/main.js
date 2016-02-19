@@ -11,8 +11,10 @@ $(document).ready(function() {
     handler: function(direction) {
       if (direction == 'down') {
         $(".fullscreen").addClass("modify");
+        $(".navbar").addClass("scrolld");
       } else {
         $(".fullscreen").removeClass("modify");
+        $(".navbar").removeClass("scrolld");
       }
     },
     offset: (isMobile) ? 0 : (5 * wHeight / 6) + 'px'

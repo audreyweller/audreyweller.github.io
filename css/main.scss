@@ -116,15 +116,61 @@ body {
   }
 }
 
+
+.resume {
+  font-family: 'Quicksand';
+  h3 {
+    font-family: 'Quicksand';
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  @mobile {
+
+    & > div {
+      margin: 0 10px;
+    }
+  }
+}
+
+
 .navbar {
   background: none;
   border-bottom: none;
+  transition: background 0.25s ease-in;
   .navbar-brand {
     text-shadow: none;
     font-family: 'Quicksand';
     color: white;
     b {
       font-weight: 700;
+    }
+  }
+  &.scrolld {
+    background: white;
+    color: black;
+    .navbar-brand {
+      color: black;
+    }
+    transition: background 0.25s ease-in;
+
+    .navbar-nav {
+      a:hover, a:active, a:visited, a:focus {
+        color: black;
+        font-weight: bold;
+      }
+    }
+
+  }
+  .navbar-nav {
+    a {
+      text-shadow: none!important;
+      font-family: 'Quicksand';
+      &:hover, &:active, &:visited, &:focus {
+        outline: none;
+      }
     }
   }
 }
